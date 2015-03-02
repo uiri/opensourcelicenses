@@ -1,0 +1,2 @@
+presentation:
+	pdflatex presentation.tex
