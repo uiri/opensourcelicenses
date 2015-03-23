@@ -8,7 +8,10 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{wrapfig}
+
+\usepackage{tocbibind}
 \usepackage{url}
+
 \renewcommand{\abstractname}{Executive Summary}
 \titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
 \titlespacing*{\subsection}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
@@ -125,13 +128,16 @@ The Academic Free License includes a copyright and a patent license. It also inc
 
 The Education Community License is essentially the same as the Apache License. It has the patent grant changed due to the different needs of the education community when it comes to patent licensing compared with industry needs.
 
+\newpage
 \section{Copyleft}
 
 Copyleft licenses are used to keep software both free and open. As opposed to permissive licenses, copyleft license require that all derived works be distributed under the same terms of the original work. This ensures that all derived works maintain the same freedoms. However, as a result of this restriction, many copyleft licenses are often left incompatible with other licenses. \cite{copyleft}
 
 \subsection{GNU GPLv2}
 
-The GNU General Public License License v2 or GPLv2 is the most commonly used free software license today. It is used in project including; Linux, The GNU GPL, first developed in 1989 by Richard Stallman, was designed to allow for the distribution of the GNU project; ensuring that any derived copies would maintain the same freedoms associated with the project. In 1991 the GPLv1 license was revised to create the GPLv2 license. This revision however was only a rephrase of the original license and did not introduce any new legal implications.
+The GNU General Public License License v2 or GPLv2 is the most commonly used free software license today. It is used in various major projects including; Linux, \textbf{Add more projects}.
+
+The GNU GPL, first developed in 1989 by Richard Stallman, was designed to allow for the distribution of the GNU project; ensuring that any derived copies would maintain the same freedoms associated with the project. In 1991 the GPLv1 license was revised to create the GPLv2 license. This revision however was only a rephrase of the original license and did not introduce any new legal implications.
 
 Some of the main features of the GNU GPLv2 include: \cite{gpl2}
 
@@ -143,6 +149,35 @@ Some of the main features of the GNU GPLv2 include: \cite{gpl2}
 \item All compiled programs must be accompanied with the corresponding source code or be provided access to the source code.
 \end{itemize}
 
+\subsection{GNU GPLv3}
+
+The GNU GPLv3, developed in 2007 was designed to improve on some of the short comings of the original GPLv2 license. Many people view the revision as controversial and criticize it for fracturing the relationship between the open source and free software communities.
+
+One of the major differences between GPLv3 and GPLv2 is that GPLv3 will block ``Tivoization''. Tivoization is a term used to describe appliances that contain GPL'ed software but violate the intended freedoms of the license by making modifications impossible. This is often enforced by shutting down the appliance when modifications are detected.
+
+A common motive for ``Tivoization'' is to prevent users from making modifications when the manufacturer knows the user will want to make changes. Manufactures often claim that this will prevent piracy or that this will somehow provide security, but is often used as a tactic to for a manufacturer to gain a monopoly on some specific market.
+
+\subsection{GNU GPL Variations}
+
+\subsubsection{LGPL}
+
+The GNU Lesser General Public license was designed to allow developers and companies to embed LGPL software into projects not licensed under a GPL license, even if the project contains proprietary software. This difference allows companies to include free software in their projects without being bound by the required terms of a strong copyleft license.
+
+\subsubsection{AGPL}
+
+The GNU Affero General Public License was designed to close a perceived loophole in the original GPL.
+
+\subsection{Others}
+
+\subsubsection{APSL}
+\subsubsection{CeCILL}
+\subsubsection{MPL}
+\subsubsection{IPL}
+
+\section{Limited Copyleft}
+
+\subsection{CDDL}
+
 \section{Conclusion}
 
 \newpage
@@ -151,6 +186,8 @@ Some of the main features of the GNU GPLv2 include: \cite{gpl2}
 \bibitem{copyleft} GNU Operating System. What is Copyleft? \url{https://www.gnu.org/copyleft/}.
 
 \bibitem{gpl2} GNU Operating System. GNU General Public License, version 2. \url{https://www.gnu.org/licenses/gpl-2.0.html}.
+
+\bibitem{gpl3} GNU Operating System. Why Upgrade to GPLv3. \url{https://www.gnu.org/licenses/rms-why-gplv3.html}.
 
 \end{thebibliography}
 
