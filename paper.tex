@@ -1,5 +1,6 @@
 \documentclass[12pt,letterpaper]{article}
 \usepackage{ifpdf}
+\usepackage{listings}
 \usepackage[parfill]{parskip}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{titlesec}
@@ -41,12 +42,13 @@ Stuff about open source software licenses.
 
 \section{Introduction}
 
-\subsection{Open Source Software}
-Put some information about open source software
+As we work on personal projects, we have learned the pain of being unable to restore code back to a working state or losing source files altogether. For this reason, we keep each project in a version control repository, often using git. Due to its ease of use and high visibility, GitHub has become a popular place to put up projects which show off one's programming ability and attract bug reports and contributions from others. Unfortunately, not all projects on GitHub have licenses attached to them.
+
+Without an explicit license from the copyright holder, something as innocuous as `git clone' can become copyright infringement. The default model for copyright is all rights reserved. This means that if a copyright holder wants their software to be widely used, improved upon and shared, they should include a license which makes their software free or open source.
 
 \subsection{Free Software}
 
-Put some information about free software
+Free software refers to free in the sense of ``free speech'' rather than free as in the phrase ``free beer''. In order for software to be considered free by the Free Software Foundation, it must grant its users four essential freedoms:
 
 \subsubsection{The four essential freedoms}
 \begin{enumerate}
@@ -54,6 +56,26 @@ Put some information about free software
 \item The freedom to study the program's source code and then change it so the program does what you wish.
 \item The freedom to distribute exact copies to others, when you wish.
 \item The freedom to distribute copies of your modified versions to others, when you wish.
+\end{enumerate}
+
+ In the early days of computing, all software was free by default. Partially, this was an attitude inherited from academia and partially it was because programs would not run on other computers unless they were free and could be ported to those other computers. This began to change with the emergence of the software industry. Bill Gates famously wrote a scathing letter in  1976 accusing personal computer hobbyists of stealing from him. Bill Gates did not make his software free. The Free Software Foundation was a reaction caused by the trend starting in the 1980s of vendors refusing to provide source code to end users.
+
+\subsection{Open Source Software}
+
+In the 1990s, due to persistent confusion around the phrase ``free software'', the Open Source Initiative was started, mainly as a way to sell the pragmatic benefits of free software to businesses without the ethical issues attached to nonfree software by the Free Software Foundation. In order for software to be open source, its distribution terms must meet the open source definition:
+
+\subsubsection{Open Source Definition}
+\begin{enumerate}
+\item Free Redistribution (must not be restricted)
+\item Source Code (must be included)
+\item Derived Works (must be allowed)
+\item Integrity of the Author's Source Code (may be maintained if patches may be distributed along side it)
+\item No Discrimination Against Persons or Groups
+\item No Discrimination Against Fields of Endeavor
+\item Distribution of License
+\item License Must Not Be Specific to a Product
+\item License Must Not Restrict Other Software
+\item License Must Be Technology-Neutral
 \end{enumerate}
 
 \section{Permissive}
