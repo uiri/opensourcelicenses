@@ -1,0 +1,78 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{ifpdf}
+\usepackage[parfill]{parskip}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{wrapfig}
+\renewcommand{\abstractname}{Executive Summary}
+\titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
+\titlespacing*{\subsection}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
+\begin{document}
+
+\thispagestyle{empty}
+% Memo, if needed, goes here...
+
+\begin{titlepage}
+\vspace*{1.5in}
+\begin{center}
+  \huge A Comparison of Open Source Software Licenses
+  \vskip1.5in
+  \large by \\
+  \large William Pearson and Kurt Bruneau \\
+\end{center}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\tableofcontents
+\listoffigures
+\newpage
+
+\begin{abstract}
+Stuff about open source software licenses.
+\end{abstract}
+\newpage
+\thispagestyle{empty}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introduction}
+
+\section{Permissive}
+
+\subsection{BSD License}
+
+The term ``BSD License'' can be misleading due to three different versions which have been used historically. For the purposes of this paper, they will be referred to as the ``original'' BSD License, the ``modified'' BSD License and the ``simplified'' BSD License. Some sources may refer to them by the number of clauses; the ``original'' BSD License has four clauses, while the ``modified'' BSD License has three and the ``simplified'' BSD License has only two. Except for the presence or absence of the third and fourth clauses of the ``original'' BSD License, all three versions of the BSD License are essentially the same.
+
+The ``original'' BSD License was written specifically for the Berkeley Standard Distribution (BSD, from which the license derives its name) and listed the University of California as the authors of the software. Its third clause required that all advertising for software covered by the license (BSD and its derivatives) acknowledge that the software being advertised ``includes software developed by the University of California, Berkeley and its contributors.''
+
+This was problematic from the point of view of many in the Free and Open Source Software community, particularly as other projects adopted the ``original'' BSD License with the phrase ``University of California, Berkeley'' replaced by the names of the authors. In 1997, in order to advertise NetBSD, 75 different acknowledgements of this kind would have been required. This absurdity ultimately led to the ``modified'' BSD license.
+
+\subsection{MIT License}
+
+This license is used by popular open source projects such as Ruby on Rails, Node.js, Lua and jQuery. The license originated at MIT with the X Window System, a GUI for Unix machines which is still present today in modern Unix systems (such as FreeBSD and Mac OS X) and Unix-like systems (such as Ubuntu and other Linux distributions). Originally the license was written specifically for the X Window System and made specific references to the X consortium.
+
+Expat, an XML library for C, genericized the license and it is the license used by Expat which is often taken verbatim (excluding the copyright notice, of course) when one refers to using the MIT license. The license used by X Window System also included a clause similar to the third clause of the modified BSD License. while Expat stripped out this clause. It is for this reason that some, such as the Free Software Foundation, view the term ``MIT License'' as ambiguous. The MIT License is substantially similar to the BSD License, although its terms are not separated out into clauses which makes the license easier and quicker to read.
+
+\subsection{Apache License}
+
+\subsection{WTFPL and Others}
+
+\section{Copyleft}
+
+\section{Conclusion}
+
+\newpage
+\section*{References}
+
+\begin{itemize}[label={},itemindent=-15pt]
+
+\item \openup 0.5em References go here.
+
+\end{itemize}
+
+
+\end{document}
