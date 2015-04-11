@@ -11,7 +11,6 @@
 
 \usepackage{tocbibind}
 \usepackage{url}
-\usepackage{chngpage}
 
 \renewcommand{\abstractname}{Executive Summary}
 \titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
@@ -37,10 +36,10 @@
 \listoffigures
 \newpage
 
-% \begin{abstract}
-% Stuff about open source software licenses.
-% \end{abstract}
-% \newpage
+\begin{abstract}
+Stuff about open source software licenses.
+\end{abstract}
+\newpage
 \thispagestyle{empty}
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -55,7 +54,7 @@ Without an explicit license from the copyright holder, something as innocuous as
 
 Free software refers to free in the sense of ``free speech'' rather than free as in the phrase ``free beer''. In order for software to be considered free by the Free Software Foundation, it must grant its users four essential freedoms:
 
-\subsubsection{The four essential freedoms}
+\subsubsection*{The four essential freedoms}
 \begin{enumerate}
 \item[0.] The freedom to run the program as you wish.
 \item The freedom to study the program's source code and then change it so the program does what you wish.
@@ -69,7 +68,7 @@ Free software refers to free in the sense of ``free speech'' rather than free as
 
 In the 1990s, due to persistent confusion around the phrase ``free software'', the Open Source Initiative was started, mainly as a way to sell the pragmatic benefits of free software to businesses without the ethical issues attached to nonfree software by the Free Software Foundation. In order for software to be open source, its distribution terms must meet the open source definition:
 
-\subsubsection{Open Source Definition}
+\subsubsection*{Open Source Definition}
 \begin{enumerate}
 \item Free Redistribution (must not be restricted)
 \item Source Code (must be included)
@@ -83,54 +82,55 @@ In the 1990s, due to persistent confusion around the phrase ``free software'', t
 \item License Must Be Technology-Neutral
 \end{enumerate}
 
-\section{Permissive}
+\section{Permissive Licenses}
+
+Permissive licenses are the licenses which offer the greatest freedom to developers. Developers are generally free to modify and redistribute the osftware subject to few conditions. The most common condition is including the copyright notice and a liability disclaimer with copies of the software.
 
 \subsection{BSD License}
 
-The term ``BSD License'' can be misleading due to three different versions which have been used historically. For the purposes of this paper, they will be referred to as the ``original'' BSD License, the ``modified'' BSD License and the ``simplified'' BSD License. Some sources may refer to them by the number of clauses; the ``original'' BSD License has four clauses, while the ``modified'' BSD License has three and the ``simplified'' BSD License has only two. Except for the presence or absence of the third and fourth clauses of the ``original'' BSD License, all three versions of the BSD License are essentially the same.
+The term ``BSD License'' can be misleading due to three different versions which have been used historically.\cite{netbsd} For the purposes of this paper, they will be referred to as the ``original'' BSD License, the ``modified'' BSD License and the ``simplified'' BSD License. Some sources may refer to them by the number of clauses; the ``original'' BSD License has four clauses, while the ``modified'' BSD License has three and the ``simplified'' BSD License has only two. Except for the presence or absence of the third and fourth clauses of the ``original'' BSD License, all three versions of the BSD License are essentially the same.
 
-The ``original'' BSD License was written specifically for the Berkeley Standard Distribution (BSD, from which the license derives its name) and listed the University of California as the authors of the software. Its third clause required that all advertising for software covered by the license (BSD and its derivatives) acknowledge that the software being advertised ``includes software developed by the University of California, Berkeley and its contributors.''
+The ``original'' BSD License was written specifically for the Berkeley Standard Distribution (BSD, from which the license derives its name) and listed the University of California as the authors of the software. Its third clause required that all advertising for software covered by the license (BSD and its derivatives) acknowledge that the software being advertised ``includes software developed by the University of California, Berkeley and its contributors.''\cite{originalbsd}
 
-This was problematic from the point of view of many in the Free and Open Source Software community, particularly as other projects adopted the ``original'' BSD License with the phrase ``University of California, Berkeley'' replaced by the names of the authors. In 1997, in order to advertise NetBSD, 75 different acknowledgements of this kind would have been required. This absurdity ultimately led to the ``modified'' BSD license.
+This was problematic from the point of view of many in the Free and Open Source Software community, particularly as other projects adopted the ``original'' BSD License with the phrase ``University of California, Berkeley'' replaced by the names of the authors. In 1997, in order to advertise NetBSD, 75 different acknowledgements of this kind would have been required. This absurdity ultimately led to the ``modified'' BSD license.\cite{netbsd}
 
-When FreeBSD removed their advertising clause, they also removed the non-endorsement clause, leading to the ``simplified'' BSD License. The language of the ``simplified'' BSD License has substantially the same legal effect as the language of the MIT License.
+When FreeBSD removed their advertising clause, they also removed the non-endorsement clause, leading to the ``simplified'' BSD License. The language of the ``simplified'' BSD License has substantially the same legal effect as the language of the MIT License.\cite{simplifiedbsd}
 
 \subsection{MIT License}
 
-This license is used by popular open source projects such as Ruby on Rails, Node.js, Lua and jQuery. The license originated at MIT with the X Window System, a GUI for Unix machines which is still present today in modern Unix systems (such as FreeBSD and Mac OS X) and Unix-like systems (such as Ubuntu and other Linux distributions). Originally the license was written specifically for the X Window System and made specific references to the X consortium.
+This license is used by popular open source projects such as Ruby on Rails, Node.js, Lua and jQuery. The license originated at MIT with the X Window System, a GUI for Unix machines which is still present today in modern Unix systems (such as FreeBSD and Mac OS X) and Unix-like systems (such as Ubuntu and other Linux distributions). Originally the license was written specifically for the X Window System and made specific references to the X consortium. \cite{x11}
 
-Expat, an XML library for C, genericized the license and it is the license used by Expat which is often taken verbatim (excluding the copyright notice, of course) when one refers to using the MIT license. The license used by X Window System also included a clause similar to the third clause of the modified BSD License. while Expat stripped out this clause. It is for this reason that some, such as the Free Software Foundation, view the term ``MIT License'' as ambiguous. The MIT License is substantially similar to the BSD License, although its terms are not separated out into clauses which makes the license easier and quicker to read.
+Expat, an XML library for C, genericized the license and it is the license used by Expat which is often taken verbatim (excluding the copyright notice, of course) when one refers to using the MIT license. \cite{mit} The license used by X Window System also included a clause similar to the third clause of the modified BSD License, while Expat stripped out this clause. It is for this reason that some, such as the Free Software Foundation, view the term ``MIT License'' as ambiguous. \cite{licenselist} The MIT License is substantially similar to the BSD License, although its terms are not separated out into clauses which makes the license easier and quicker to read.
 
-The MIT License explicitly mentions permission to ``use... and/or sell'' copies of the software. This has been argued to include a patent grant as ordinarily there are no copyright-related restrictions on using and selling a piece of software so long as no copy is made. For instance, if someone receives the software on a CD-ROM, they can freely use and sell the CD-ROM so long as they don't rip the software from it.
+The MIT License explicitly mentions permission to ``use... and/or sell'' copies of the software. This has been argued to include a patent grant as ordinarily there are no copyright-related restrictions on using and selling a piece of software so long as no copy is made.[citation needed] For instance, if someone receives the software on a CD-ROM, they can freely use and sell the CD-ROM so long as they don't rip the software from it.[citation needed]
 
 \subsection{Apache License}
 
-The original Apache License was essentially the same as the ``original'' BSD License with two clauses added. A clause prohibiting modified versions from using the name ``Apache'' without permission so as to prevent confusion with the original software was added. A clause requiring the advertising acknowledgement be applied to any form of redistribution was also added.
+The original Apache License was essentially the same as the ``original'' BSD License with two clauses added. A clause prohibiting modified versions from using the name ``Apache'' without permission so as to prevent confusion with the original software was added. A clause requiring the advertising acknowledgement be applied to any form of redistribution was also added.\cite{apache1}
 
-In version 1.1 of the Apache License, the advertising clause was removed. This made it essentially the same as the ``modified'' BSD License with the two Apache clauses added.
+In version 1.1 of the Apache License, the advertising clause was removed. This made it essentially the same as the ``modified'' BSD License with the two Apache clauses added.\cite{apache11}
 
-Apache License, Version 2.0 brought more substantial changes. It removed explicit references to the Apache Software Foundation to make use of the license by others easier and clarified some language so that others could more easily contribute to projects licensed under the Apache License. This included a patent grant from any contributor whose contribution infinged their own patent.
+Apache License, Version 2.0 brought more substantial changes. It removed explicit references to the Apache Software Foundation to make use of the license by others easier and clarified some language so that others could more easily contribute to projects licensed under the Apache License. This included a patent grant from any contributor whose contribution infinged their own patent.\cite{apache2}
 
 \subsection{WTFPL and Public Domain}
 
-The Do What the Fuck You Want to Public License is perhaps the most liberal copyright license available, being virtually indistinguishable from dedication to the public domain. In some countries, it is not possible to give up all rights in a copyrighted work and reliably dedicate some work to the public domain. This makes the WTFPL a more suitable alternative for those who wish to allow others to treat their project as if it were in the public domain.
+The Do What the Fuck You Want to Public License is perhaps the most liberal copyright license available, being virtually indistinguishable from dedication to the public domain. In some countries, it is not possible to give up all rights in a copyrighted work and reliably dedicate some work to the public domain. This makes the WTFPL a more suitable alternative for those who wish to allow others to treat their project as if it were in the public domain.\cite{wtfpl}
 
-SQLite is an embedded SQL database whose code has been dedicated to the public domain. The company that employs the principle developers provides an option for people to obtain an explicit license to SQLite due to the existence of obtuse legal departments and jurisdictions which do not allow authors to dedicate works to the public domain.
+SQLite is an embedded SQL database whose code has been dedicated to the public domain. The company that employs the principle developers provides an option for people to obtain an explicit license to SQLite due to the existence of obtuse legal departments and jurisdictions which do not allow authors to dedicate works to the public domain.\cite{sqlite}
 
 \subsection{Other Permissive Licenses}
 
-Boost, a popular collection of C++ libraries, has its own license which is essentially the same as the MIT License and is substantially similar to the ``simplified'' BSD License.
+Boost, a popular collection of C++ libraries, has its own license which is essentially the same as the MIT License and is substantially similar to the ``simplified'' BSD License. \cite{boost}
 
-The ISC License is even less verbose than the MIT License. The language which was removed was deemed obsolete due to the Berne convention. This license has become the preferred license for OpenBSD and other projects. Due to its lack of verbosity, it may be argued that it does not contain the implicit patent grant which the MIT license may contain. The Fair License is substantially similar to the ISC License although far less popular.
+The ISC License is even less verbose than the MIT License. The language which was removed was deemed obsolete due to the Berne convention. This license has become the preferred license for OpenBSD and other projects.\cite{openbsd} Due to its lack of verbosity, it may be argued that it does not contain the implicit patent grant which the MIT license may contain. The Fair License is substantially similar to the ISC License although far less popular.\cite{fair}
 
-The Attribution Assurance License is substantially similar to the BSD License, except that the license is GPG-signed and requires that redistribution include the GPG-signed form of the license. This assures downstream recipients of the software that the terms of the license have not been changed by redistributors.
+The Attribution Assurance License is substantially similar to the BSD License, except that the license is GPG-signed and requires that redistribution include the GPG-signed form of the license. This assures downstream recipients of the software that the terms of the license have not been changed by redistributors.\cite{attrassur}
 
-The Academic Free License includes a copyright and a patent license. It also includes a choice of juridiction clause in favour of the author and includes a provision for recovering legal fees incurred enforcing the terms of the license. It has been deemed redundant due to the creation of the Apache License Version 2.0.
+The Academic Free License includes a copyright and a patent license. It also includes a choice of juridiction clause in favour of the author and includes a provision for recovering legal fees incurred enforcing the terms of the license. It has been deemed redundant due to the creation of the Apache License Version 2.0.\cite{academic}
 
-The Education Community License is essentially the same as the Apache License. It has the patent grant changed due to the different needs of the education community when it comes to patent licensing compared with industry needs.
+The Education Community License is essentially the same as the Apache License. It has the patent grant changed due to the different needs of the education community when it comes to patent licensing compared with industry needs.\cite{education}
 
-\newpage
-\section{Copyleft}
+\section{Copyleft Licenses}
 
 Copyleft licenses are designed to keep software both free and open. As opposed to permissive licenses, copyleft licenses are modelled around the free software philosophy. A copyleft license guarantees that any derived work must be distributed under the same set of freedoms of the original work \cite{copyleft}. While this licensing restriction can greatly improve collaboration in a development ecosystem, it often leads to incompatibilies with other licenses.
 
@@ -228,12 +228,48 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 
 \newpage
 
-\begin{thebibliography}{9}
-\bibitem{copyleft} GNU Operating System. What is Copyleft? \url{https://www.gnu.org/copyleft/}.
+\begin{thebibliography}{20}
+
+\bibitem{apache1} The Apache Software Foundation. Apache License, Version 1.0 \url{https://www.apache.org/licenses/LICENSE-1.0}
+
+\bibitem{apache11} The Apache Software Foundation. Apache License, Version 1.1 \url{https://www.apache.org/licenses/LICENSE-1.1}
+
+\bibitem{apache2} The Apache Software Foundation. Apache License, Version 2.0 \url{https://www.apache.org/licenses/LICENSE-2.0}
+
+\bibitem{boost} Boost C++ Libraries. Boost Software License. \url{http://www.boost.org/users/license.html}
+
+\bibitem{originalbsd} Free Software Directory. License:BSD 4Clause. \url{directory.fsf.org/wiki/License:BSD_4Clause}
+
+\bibitem{simplifiedbsd} Free Software Directory. License:FreeBSD. \url{http://directory.fsf.org/wiki?title=License:FreeBSD}
+
+\bibitem{x11} Free Software Directory. License:X11. \url{http://directory.fsf.org/wiki/License:X11}
+
+\bibitem{netbsd} GNU Operating System. BSD License Problem. \url{https://www.gnu.org/philosophy/bsd.html}
 
 \bibitem{gpl2} GNU Operating System. GNU General Public License, version 2. \url{https://www.gnu.org/licenses/gpl-2.0.html}.
 
+\bibitem{licenselist} GNU Operating System. Various Licenses and Comments About Them. \url{https://www.gnu.org/licenses/license-list.html}
+
+\bibitem{copyleft} GNU Operating System. What is Copyleft? \url{https://www.gnu.org/copyleft/}.
+
 \bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3. \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
+
+\bibitem{openbsd} OpenBSD. OpenBSD Copyright Policy. \url{http://www.openbsd.org/policy.html}
+
+\bibitem{academic} Open Source Initiative. Academic Free License 3.0. \url{http://opensource.org/licenses/AFL-3.0}
+
+\bibitem{attrassur} Open Source Initiative. Attribution Assurance License. \url{http://opensource.org/licenses/AAL}
+
+\bibitem{education} Open Source Initiative. Education Community License, Version 2.0 \url{http://opensource.org/licenses/ECL-2.0}
+
+\bibitem{fair} Open Source Initiative. Fair License (Fair). \url{http://opensource.org/licenses/Fair}
+
+\bibitem{mit} Open Source Initiative. The MIT License (MIT). \url{http://opensource.org/licenses/MIT}
+
+\bibitem{sqlite} SQLite. SQLite Copyright. \url{https://www.sqlite.org/copyright.html}
+
+\bibitem{wtfpl} WTFPL – Do What the Fuck You Want to Public License. Frequently Asked Questions. \url{http://www.wtfpl.net/faq/}
+
 
 \bibitem{lgpl} GNU Operating System. GNU Lesser General Public License. \url{https://www.gnu.org/licenses/lgpl.html}.
 
@@ -244,5 +280,6 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 \bibitem{license-stats} Black Duck. Top 20 Open Source Licenses. \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
 
 \end{thebibliography}
+
 
 \end{document}
