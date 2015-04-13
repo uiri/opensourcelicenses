@@ -37,7 +37,7 @@
 \newpage
 
 \begin{abstract}
-Stuff about open source software licenses.
+This report compares and contrasts various copyright licenses which meet the criteria for either free or open source software. Two main categories of licenses are explored: permissive licenses which focus on developer freedom and copyleft licenses which focus on end user freedom. This report concludes that despite the plethora of licenses available, software engineers should familiarize themselves mainly with the MIT license, the Apache license and the GNU Genera Public License and refer other licenses to legal professionals.
 \end{abstract}
 \newpage
 \thispagestyle{empty}
@@ -46,13 +46,13 @@ Stuff about open source software licenses.
 
 \section{Introduction}
 
-As we work on personal projects, we have learned the pain of being unable to restore code back to a working state or losing source files altogether. For this reason, we keep each project in a version control repository, often using git. Due to its ease of use and high visibility, GitHub has become a popular place to put up projects which show off one's programming ability and attract bug reports and contributions from others. Unfortunately, not all projects on GitHub have licenses attached to them.
+As we work on personal projects, we have learned the pain of being unable to restore code back to a working state or losing source files altogether. For this reason, we keep each project in a version control repository, often using git. Due to its ease of use and consequent popularity, GitHub has become a popular place to put up projects which show off one's programming ability. Its popularity has led to it becoming the host of many mature and fledgling open source projects. Unfortunately, not all projects on GitHub have copyright licenses attached to them.
 
-Without an explicit license from the copyright holder, something as innocuous as `git clone' can become copyright infringement. The default model for copyright is all rights reserved. This means that if a copyright holder wants their software to be widely used, improved upon and shared, they should include a license which makes their software free or open source.
+Without an explicit license from the copyright holder, something as seemingly innocuous as `git clone' can become copyright infringement. The default model for copyright is all rights reserved. This means that if a copyright holder wants their software to be widely used, improved upon and shared, they should include a license which makes their software free or open source.\cite{nolicense}
 
 \subsection{Free Software}
 
-Free software refers to free in the sense of ``free speech'' rather than free as in the phrase ``free beer''. In order for software to be considered free by the Free Software Foundation, it must grant its users four essential freedoms:
+Free software refers to free in the sense of ``free speech'' rather than free as in the phrase ``free beer''. In order for software to be considered free by the Free Software Foundation, it must grant its users four essential freedoms:\cite{fourfreedoms}
 
 \subsubsection*{The four essential freedoms}
 \begin{enumerate}
@@ -62,13 +62,13 @@ Free software refers to free in the sense of ``free speech'' rather than free as
 \item The freedom to distribute copies of your modified versions to others, when you wish.
 \end{enumerate}
 
- In the early days of computing, all software was free by default. Partially, this was an attitude inherited from academia and partially it was because programs would not run on other computers unless they were free and could be ported to those other computers. This began to change with the emergence of the software industry. Bill Gates famously wrote a scathing letter in  1976 accusing personal computer hobbyists of stealing from him. Bill Gates did not make his software free. The Free Software Foundation was a reaction caused by the trend starting in the 1980s of vendors refusing to provide source code to end users.
+ In the early days of computing, all software was free by default. Partially, this was an attitude inherited from academia and partially it was because programs would not run on other computers unless they were free and could be ported to those other computers. This began to change with the emergence of the software industry.\cite{fsfhistory} Bill Gates famously wrote a scathing letter in  1976 accusing personal computer hobbyists of stealing from him. Bill Gates did not make his software free.\cite{billyg} The Free Software Foundation was a reaction caused by the trend starting in the 1980s of vendors refusing to provide source code to end users.\cite{fsfhistory}
 
 \subsection{Open Source Software}
 
-In the 1990s, due to persistent confusion around the phrase ``free software'', the Open Source Initiative was started, mainly as a way to sell the pragmatic benefits of free software to businesses without the ethical issues attached to nonfree software by the Free Software Foundation. In order for software to be open source, its distribution terms must meet the open source definition:
+In the 1990s, due to persistent confusion around the phrase ``free software'', the Open Source Initiative was started, mainly as a way to sell the pragmatic benefits of free software to businesses without the ethical issues attached to nonfree software by the Free Software Foundation.\cite{opensourcehistory} In order for software to be open source, its distribution terms must meet the open source definition:
 
-\subsubsection*{Open Source Definition}
+\subsubsection*{Open Source Definition\cite{opensourcedefinition}}
 \begin{enumerate}
 \item Free Redistribution (must not be restricted)
 \item Source Code (must be included)
@@ -84,7 +84,7 @@ In the 1990s, due to persistent confusion around the phrase ``free software'', t
 
 \section{Permissive Licenses}
 
-Permissive licenses are the licenses which offer the greatest freedom to developers. Developers are generally free to modify and redistribute the osftware subject to few conditions. The most common condition is including the copyright notice and a liability disclaimer with copies of the software.
+Permissive licenses are the licenses which offer the greatest freedom to developers. Developers are generally free to modify and redistribute the osftware subject to few conditions. The most common condition is including the copyright notice and a liability disclaimer with copies of the software.\cite{permissive}
 
 \subsection{BSD License}
 
@@ -102,7 +102,7 @@ This license is used by popular open source projects such as Ruby on Rails, Node
 
 Expat, an XML library for C, genericized the license and it is the license used by Expat which is often taken verbatim (excluding the copyright notice, of course) when one refers to using the MIT license. \cite{mit} The license used by X Window System also included a clause similar to the third clause of the modified BSD License, while Expat stripped out this clause. It is for this reason that some, such as the Free Software Foundation, view the term ``MIT License'' as ambiguous. \cite{licenselist} The MIT License is substantially similar to the BSD License, although its terms are not separated out into clauses which makes the license easier and quicker to read.
 
-The MIT License explicitly mentions permission to ``use... and/or sell'' copies of the software. This has been argued to include a patent grant as ordinarily there are no copyright-related restrictions on using and selling a piece of software so long as no copy is made.[citation needed] For instance, if someone receives the software on a CD-ROM, they can freely use and sell the CD-ROM so long as they don't rip the software from it.[citation needed]
+The MIT License explicitly mentions permission to ``use... and/or sell'' copies of the software. This includes an implied patent license as ordinarily there are no copyright-related restrictions on using and selling a piece of software so long as no copy is made.\cite{boost} For instance, if someone receives the software on a CD, they can freely use and sell the CD so long as they don't rip the software from it.\cite{copyright}
 
 \subsection{Apache License}
 
@@ -238,11 +238,17 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 
 \bibitem{boost} Boost C++ Libraries. Boost Software License. \url{http://www.boost.org/users/license.html}
 
+\bibitem{nolicense} ChooseALicense.com. No License. \url{http://choosealicense.com/no-license/}
+
+\bibitem{billyg} DigiBarn Computer Museum. Bill Gates' Open Letter To Hobbyists. \url{http://www.digibarn.com/collections/newsletters/homebrew/V2_01/gatesletter.html}
+
 \bibitem{originalbsd} Free Software Directory. License:BSD 4Clause. \url{directory.fsf.org/wiki/License:BSD_4Clause}
 
 \bibitem{simplifiedbsd} Free Software Directory. License:FreeBSD. \url{http://directory.fsf.org/wiki?title=License:FreeBSD}
 
 \bibitem{x11} Free Software Directory. License:X11. \url{http://directory.fsf.org/wiki/License:X11}
+
+\bibitem{fsfhistory} GNU Operating System. About the GNU Project \url{https://www.gnu.org/gnu/thegnuproject.html}
 
 \bibitem{netbsd} GNU Operating System. BSD License Problem. \url{https://www.gnu.org/philosophy/bsd.html}
 
@@ -252,7 +258,9 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 
 \bibitem{copyleft} GNU Operating System. What is Copyleft? \url{https://www.gnu.org/copyleft/}.
 
-\bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3. \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
+\bibitem{fourfreedoms} GNU Operating System. What is Free Software? \url{https://www.gnu.org/philosophy/free-sw.html}
+
+bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3. \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
 
 \bibitem{openbsd} OpenBSD. OpenBSD Copyright Policy. \url{http://www.openbsd.org/policy.html}
 
@@ -264,9 +272,17 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 
 \bibitem{fair} Open Source Initiative. Fair License (Fair). \url{http://opensource.org/licenses/Fair}
 
+\bibitem{permissive} Open Source Initiative. Frequently Answered Questions. \url{http://opensource.org/faq}
+
+\bibitem{opensourcehistory} Open Source Initiative. History of the OSI. \url{http://opensource.org/history}
+
 \bibitem{mit} Open Source Initiative. The MIT License (MIT). \url{http://opensource.org/licenses/MIT}
 
+\bibitem{opensourcedefinition} Open Source Initiative. The Open Source Definition. \url{http://opensource.org/definition}
+
 \bibitem{sqlite} SQLite. SQLite Copyright. \url{https://www.sqlite.org/copyright.html}
+
+\bibitem{copyright} Teaching Copyright. Copyright Frequently Asked Questions. \url{http://www.teachingcopyright.org/handout/copyright-faq}
 
 \bibitem{wtfpl} WTFPL – Do What the Fuck You Want to Public License. Frequently Asked Questions. \url{http://www.wtfpl.net/faq/}
 
@@ -280,6 +296,5 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 \bibitem{license-stats} Black Duck. Top 20 Open Source Licenses. \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
 
 \end{thebibliography}
-
 
 \end{document}
