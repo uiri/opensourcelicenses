@@ -161,17 +161,28 @@ Finally, since software licensed under the GPLv2 must be accompanied with source
 
 \subsection{GNU GPLv3}
 
-In 2007, the GNU GPLv3 was developed to improve on some of flaws encountered with the original GPLv2 license. Many people view the revision as controversial and criticize it for fracturing the relationship between the open source and free software communities.
+In 2007, the GPLv3 was released to work around some of the shortcomings of the original license. While this release was designed to improve upon the protections of the author, it is sometimes criticized for dividing the open source and free software communities.
 
-One of the major differences between GPLv3 and GPLv2 is that GPLv3 will block ``Tivoization''. Tivoization is a term used to describe appliances that contain GPL'ed software but violate the intended freedoms of the license by making modifications impossible. This is often enforced by shutting down the appliance when modifications are detected.
+\subsubsection{Tivoization}
+One of the biggest changes introduced with the GPLv3 is that it blocks ``Tivoization''. Tivoization is a term invented by Richard Stallman to describe appliances that contain GPL'ed software but violate the intended freedoms of the license by making modifications impossible; often by shutting down the appliance when modifications are detected \cite{gpl3}.
 
-A common motive for ``Tivoization'' is to prevent users from making modifications when the manufacturer knows the user will want to make changes. Manufactures often claim that this will prevent piracy or that this will somehow provide security, but is often used as a tactic to for a manufacturer to gain a monopoly on some specific market.
+While ``Tivoization''is regularly presented as a means to combat piracy, it is often used to build a monopoly on a product that uses free software. This can be good for the growth of open source software in a commercial world, but goes against what the free software movement stands for.
 
-\textbf{DRM Protection}
+\subsubsection{Laws Prohibiting Free Software}
 
-\textbf{Discriminatory Patent Deals}
+Another major change introduced with GPLv3 is that laws that criminalized the development of free software under GPLv2 no longer apply. This includes legations such as the Digital Millennium Copyright Act and the European Union Copyright Directive.
+
+The philosophy behind this change is that you shouldn't be criminalized for writing software, no matter the intent. While this does not forbid DRM in GPLed software, section 3 of the GPLv3 license states that ``the system will not count as an effective technological ``protection'' measure'' \cite{gpl3}. This effectively guarantees that if the author distributes software that breaks the DRM, they will not be threatened laws such as the DMCA.
+
+\subsubsection{Patent Threats}
+
+Finally, GPLv3 aims to avoid discriminatory patent deals. In the past companies like Microsoft have claimed that they will not sue free software users for patent infringment if they obtain their software from a vendor that pays Microsoft. \cite{gpl3}
+
+\newpage
 
 \subsection{GNU GPL Variations}
+
+In addition to the main GPL license, two subsets exist which address specific problems related to the the primary GPL license.
 
 \subsubsection{LGPL}
 
@@ -179,11 +190,15 @@ The GNU Lesser General Public license was designed to allow developers and compa
 
 \subsubsection{AGPL}
 
-The GNU Affero General Public License was designed to close a perceived application service provider loophole in the original GPL. This additional provision requires that  that the complete source code be made available to any network user of the AGPL-licensed work.
+The GNU Affero General Public License was designed to close a perceived application service provider loophole in the original GPL. It includes an additional provision which requires that the complete source code be made available to any network user of the AGPL licensed work.
 
-\subsection{Others}
+\section{MPL}
 
-\subsubsection{APSL}
+The Mozilla Public License is a license that aims at finding a balance between the BSD and GPL licenses. It is includes in various open source projects including; Thunderbird, Firefox, and Libreoffice.
+
+\section{CDDL}
+
+\section{APSL}
 
 The Apple Public Source License was the original license under which Apple's Darwin operating system was created. While APSL is fully copyleft and the FSF supports the license, they do no longer recommend it since it allows linking with entirely proprietary files. This license was essential in the first stages of Apple, however today most of the software released by the company now use the Apache license.
 
@@ -201,6 +216,9 @@ The Apple Public Source License was the original license under which Apple's Dar
 
 \section{Conclusion}
 
+- Copyleft vs free software
+- What licenses to choose
+
 \newpage
 
 \begin{thebibliography}{9}
@@ -208,20 +226,10 @@ The Apple Public Source License was the original license under which Apple's Dar
 
 \bibitem{gpl2} GNU Operating System. GNU General Public License, version 2. \url{https://www.gnu.org/licenses/gpl-2.0.html}.
 
-\bibitem{gpl3} GNU Operating System. Why Upgrade to GPLv3. \url{https://www.gnu.org/licenses/rms-why-gplv3.html}.
+\bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3. \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
 
 \bibitem{license-stats} Black Duck. Top 20 Open Source Licenses. \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
 
 \end{thebibliography}
-
-% \section*{References}
-
-% \begin{itemize}[label={},itemindent=-15pt]
-
-% \item \openup 0.5em References go here.
-
-
-% \end{itemize}
-
 
 \end{document}
