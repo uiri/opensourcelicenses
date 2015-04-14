@@ -11,6 +11,7 @@
 
 \usepackage{tocbibind}
 \usepackage{url}
+\usepackage{chngpage}
 
 \renewcommand{\abstractname}{Executive Summary}
 \titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
@@ -36,10 +37,10 @@
 \listoffigures
 \newpage
 
-\begin{abstract}
-Stuff about open source software licenses.
-\end{abstract}
-\newpage
+% \begin{abstract}
+% Stuff about open source software licenses.
+% \end{abstract}
+% \newpage
 \thispagestyle{empty}
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -131,33 +132,44 @@ The Education Community License is essentially the same as the Apache License. I
 \newpage
 \section{Copyleft}
 
-Copyleft licenses are used to keep software both free and open. As opposed to permissive licenses, copyleft license require that all derived works be distributed under the same terms of the original work. This ensures that all derived works maintain the same freedoms. However, as a result of this restriction, many copyleft licenses are often left incompatible with other licenses. \cite{copyleft}
+Copyleft licenses are designed to keep software both free and open. As opposed to permissive licenses, copyleft licenses are modelled around the free software philosophy. A copyleft license guarantees that any derived work must be distributed under the same set of freedoms of the original work \cite{copyleft}. While this licensing restriction can greatly improve collaboration in a development ecosystem, it often leads to incompatibilies with other licenses.
 
 \subsection{GNU GPLv2}
 
-The GNU General Public License License v2 or GPLv2 is the most commonly used free software license today. It is used in various open source projects, the most major one being Linux.
+The GNU General Public License License v2 is the most common open source license. It is used in a wide range of free and open source projects including the worlds largest open source project, Linux.
 
-The GNU GPL, first developed in 1989 by Richard Stallman, was designed to allow for the distribution of the GNU project; ensuring that any derived copies would maintain the same freedoms associated with the project. In 1991 the GPLv1 license was revised to create the GPLv2 license. This revision however was only a rephrase of the original license and did not introduce any new legal implications.
+Frustrated by the shift in software culture, Stallman, the designer of the GPL, was determined to ensure that users would remain fully in control of their software. The surge in proprietary software challenged Stallman's vision; influencing him to develop the GNU project and the Free Software Foundation.
 
-Some of the main features of the GNU GPLv2 include: \cite{gpl2}
+In the process of developing the GNU project, Stallman realized that his collection of software maintained the freedoms that he set out to ensure, but the fractured licensing of each application prevented his applications from sharing code. As a result, in 1989, he designed the GNU GPL to unify the licenses of the GNU project, allowing him to share the code between each application while maintaining the goals of a copyleft license. Two years later he released the GPLv2 to rephrase the legal language of the original GPL, however this change didn't introduce any new legal implications.
 
-\begin{itemize}
+Some of the main features of the GNU GPLv2 include:
+\begin{enumerate}
 \item The ability to copy and redistribute unmodified source code
 \item The ability to modify and redistribute modified source code
 \item The ability to distribute a compiled version of the software considering that all copies contain a copyright notice and exclusion of warranty.
 \item All modified copies are distributed under the GPLv2 license
 \item All compiled programs must be accompanied with the corresponding source code or be provided access to the source code.
-\end{itemize}
+\end{enumerate}
+
+\cite{gpl2}
+
+These features effectively allow anyone to use, copy, and distribute software while ensuring that the original author is protected. For instance, the exclusion of warranty clause ensures that the author is not responsible for any damages incurred from failure in a critical system.
+
+In addition, the license ensures that while any one can make their own changes to the original software, they cannot repackage it with a non-free license and claim the software as their own.
+
+Finally, since software licensed under the GPLv2 must be accompanied with source code, the original author is granted full access to the source of any derived works; effectively creating a software ecosystem where developers work together to accomplish common goals.
 
 \subsection{GNU GPLv3}
 
-The GNU GPLv3, developed in 2007 was designed to improve on some of the short comings of the original GPLv2 license. Many people view the revision as controversial and criticize it for fracturing the relationship between the open source and free software communities.
+In 2007, the GNU GPLv3 was developed to improve on some of flaws encountered with the original GPLv2 license. Many people view the revision as controversial and criticize it for fracturing the relationship between the open source and free software communities.
 
 One of the major differences between GPLv3 and GPLv2 is that GPLv3 will block ``Tivoization''. Tivoization is a term used to describe appliances that contain GPL'ed software but violate the intended freedoms of the license by making modifications impossible. This is often enforced by shutting down the appliance when modifications are detected.
 
 A common motive for ``Tivoization'' is to prevent users from making modifications when the manufacturer knows the user will want to make changes. Manufactures often claim that this will prevent piracy or that this will somehow provide security, but is often used as a tactic to for a manufacturer to gain a monopoly on some specific market.
 
-\textbf{CONTINUE THIS, there is a lot more information to cover in this topic}
+\textbf{DRM Protection}
+
+\textbf{Discriminatory Patent Deals}
 
 \subsection{GNU GPL Variations}
 
@@ -175,6 +187,18 @@ The GNU Affero General Public License was designed to close a perceived applicat
 
 The Apple Public Source License was the original license under which Apple's Darwin operating system was created. While APSL is fully copyleft and the FSF supports the license, they do no longer recommend it since it allows linking with entirely proprietary files. This license was essential in the first stages of Apple, however today most of the software released by the company now use the Apache license.
 
+\section{License Adoption}
+
+\begin{figure}[h]
+\begin{adjustwidth}{-1in}{-1in}
+  \centering
+  \includegraphics[width=1.3\textwidth]{license-adoption}
+\end{adjustwidth}
+  \caption[Top 20 Open Source Licenses]{Retrieved from BlackDuck \cite{license-stats}}
+\end{figure}
+
+\newpage
+
 \section{Conclusion}
 
 \newpage
@@ -185,6 +209,8 @@ The Apple Public Source License was the original license under which Apple's Dar
 \bibitem{gpl2} GNU Operating System. GNU General Public License, version 2. \url{https://www.gnu.org/licenses/gpl-2.0.html}.
 
 \bibitem{gpl3} GNU Operating System. Why Upgrade to GPLv3. \url{https://www.gnu.org/licenses/rms-why-gplv3.html}.
+
+\bibitem{license-stats} Black Duck. Top 20 Open Source Licenses. \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
 
 \end{thebibliography}
 
