@@ -140,7 +140,7 @@ The GNU General Public License License v2 is the most common open source license
 
 Frustrated by the shift in software culture, Stallman, the designer of the GPL, was determined to ensure that users would remain fully in control of their software. The surge in proprietary software challenged Stallman's vision; influencing him to develop the GNU project and the Free Software Foundation.
 
-In the process of developing the GNU project, Stallman realized that his collection of software maintained the freedoms that he set out to ensure, but the fractured licensing of each application prevented his applications from sharing code. As a result, in 1989, he designed the GNU GPL to unify the licenses of the GNU project, allowing him to share the code between each application while maintaining the goals of a copyleft license. Two years later he released the GPLv2 to rephrase the legal language of the original GPL, however this change didn't introduce any new legal implications.
+In the process of developing the GNU project, Stallman realized that his collection of software maintained the freedoms that he set out to ensure, but the fractured licensing of each application prevented his applications from sharing code. As a result, in 1989, he designed the GNU GPL to unify the licenses of the GNU project; allowing him to share the code between each application while maintaining the goals of a copyleft license \cite{gpl2}. Two years later he released the GPLv2 to rephrase the legal language of the original GPL, however this change didn't introduce any new legal implications.
 
 Some of the main features of the GNU GPLv2 include:
 \begin{enumerate}
@@ -170,39 +170,46 @@ While ``Tivoization''is regularly presented as a means to combat piracy, it is o
 
 \subsubsection{Laws Prohibiting Free Software}
 
-Another major change introduced with GPLv3 is that laws that criminalized the development of free software under GPLv2 no longer apply. This includes legations such as the Digital Millennium Copyright Act and the European Union Copyright Directive.
+Another major change introduced with GPLv3 is that laws that criminalized the development of free software under GPLv2 no longer apply. This includes legislation such as the Digital Millennium Copyright Act and the European Union Copyright Directive.
 
 The philosophy behind this change is that you shouldn't be criminalized for writing software, no matter the intent. While this does not forbid DRM in GPLed software, section 3 of the GPLv3 license states that ``the system will not count as an effective technological ``protection'' measure'' \cite{gpl3}. This effectively guarantees that if the author distributes software that breaks the DRM, they will not be threatened laws such as the DMCA.
 
 \subsubsection{Patent Threats}
 
-Finally, GPLv3 aims to avoid discriminatory patent deals. In the past companies like Microsoft have claimed that they will not sue free software users for patent infringment if they obtain their software from a vendor that pays Microsoft. \cite{gpl3}
+Finally, GPLv3 aims to avoid discriminatory patent deals. In the past companies like Microsoft and Novel have tried to use their thousands of patents to claim royalties on users for patent infringement. GPLv3 avoid this by providing explicit patent protection from the program's contributors and redistributors \cite{gpl3}.
 
 \newpage
 
 \subsection{GNU GPL Variations}
 
-In addition to the main GPL license, two subsets exist which address specific problems related to the the primary GPL license.
+In addition to the main GPL license, two modified version exist which address specific problems related to the the primary GPL license.
 
-\subsubsection{LGPL}
+The GNU Lesser General Public license was designed to allow developers and companies to link LGPL libraries into projects not licensed under a GPL license, even if the project contains proprietary software. \cite{lgpl}. This difference allows companies to include free software in their projects without being bound by the required terms of a strong copyleft license.
 
-The GNU Lesser General Public license was designed to allow developers and companies to embed LGPL software into projects not licensed under a GPL license, even if the project contains proprietary software. This difference allows companies to include free software in their projects without being bound by the required terms of a strong copyleft license.
+The GNU Affero General Public License was designed to close a perceived application service provider loophole in the original GPL. It includes an additional provision which requires that the complete source code be made available to any network user of the AGPL licensed work \cite{agpl}.
 
-\subsubsection{AGPL}
+\subsection{MPL}
 
-The GNU Affero General Public License was designed to close a perceived application service provider loophole in the original GPL. It includes an additional provision which requires that the complete source code be made available to any network user of the AGPL licensed work.
+The Mozilla Public License is a weak copyleft license that aims to strike a balance between the BSD and GPL licenses. By striking this balance, the MPL motives collaboration between business and the open source community. The MPL is used in various open source projects including; Thunderbird, Firefox, and Libreoffice.
 
-\section{MPL}
+Much like the LGPL, the MPL allows mixing source code of any license, even those that are proprietary, as long as the source code that is distributed under the MPL remains under the MPL. The biggest difference between the LGPL and the MPL is that the MPL applies copyleft on the context of files while the LGPL applies copyleft on the context of libraries \cite{mpl}.
 
-The Mozilla Public License is a license that aims at finding a balance between the BSD and GPL licenses. It is includes in various open source projects including; Thunderbird, Firefox, and Libreoffice.
+\subsection{Other Copyleft Licenses}
 
-\section{CDDL}
+The Common Public License is a license produced by IBM which encourages open source development in commercial settings, while still maintaining the ability to use software licensed under separate terms. Unlike the MPL, the CPL is a strong copyleft license, sharing much of the same terminology in the GPL, however it lacks compatibility with all versions of GPL due to ``choice of law'' section which restricts legal disputes to specific courts.
 
-\section{APSL}
+The Eclipse Public License is a slightly modified version of the Common Public License which drops the terms related to patent litigations. It is used in the Eclipse IDE and various other Java related projects including the JVM and Clojure.
 
-The Apple Public Source License was the original license under which Apple's Darwin operating system was created. While APSL is fully copyleft and the FSF supports the license, they do no longer recommend it since it allows linking with entirely proprietary files. This license was essential in the first stages of Apple, however today most of the software released by the company now use the Apache license.
+The Common Development and Distribution License, produced by Sun Microsystems, is based on the MPL.
 
-\section{License Adoption}
+The Apple Public Source License was the original license under which Apple's Darwin operating system was developed. While APSL is fully copyleft and the FSF supports the license, they do no longer recommend it. This license was essential in the first stages of Apple, however today most of the software released by the company now use the Apache license.
+
+\newpage
+
+\section{Deciding on a License}
+
+While licensing software is a crucial step in any kind of open source development, it can often be difficult to determine which license best suits your project. As previously outlined, the biggest divide among the open source licenses is the difference between a permissive license and a copyleft license. If you plan on linking your open source software with proprietary software, a permissive or weak copyleft license would be the best choice. However, for many  open source projects, a copyleft license is often more suitable.
+
 
 \begin{figure}[h]
 \begin{adjustwidth}{-1in}{-1in}
@@ -212,12 +219,12 @@ The Apple Public Source License was the original license under which Apple's Dar
   \caption[Top 20 Open Source Licenses]{Retrieved from BlackDuck \cite{license-stats}}
 \end{figure}
 
-\newpage
+Considering the license adoption statistics as outline in figure 1, it is quite obvious that the GPL and its variants dominate the open source license market. However, there is massive divide between GPL and the other copyleft licenses, while the permissive licenses are distributed more evenly.
+
+As a result of this large divide, for free software the decision almost always comes down to the GPLv3 or GPLv2. For open source software, it is ideal to choose a GPL license, but if you cannot ahere to the strict requirements of a copyleft license, it usually comes down to either the MIT, Apache or ``modified'' BSD license.
 
 \section{Conclusion}
-
-- Copyleft vs free software
-- What licenses to choose
+At first sight, licensing can seem quite daunting for those who don't care much for legal matters, but its crucial aspect of open source software development. Without a software license you can't create an open source community.
 
 \newpage
 
@@ -227,6 +234,12 @@ The Apple Public Source License was the original license under which Apple's Dar
 \bibitem{gpl2} GNU Operating System. GNU General Public License, version 2. \url{https://www.gnu.org/licenses/gpl-2.0.html}.
 
 \bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3. \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
+
+\bibitem{lgpl} GNU Operating System. GNU Lesser General Public License. \url{https://www.gnu.org/licenses/lgpl.html}.
+
+\bibitem{agpl} GNU Operating System. Why the Affero GPL. \url{https://gnu.org/licenses/why-affero-gpl.html}.
+
+\bibitem{mpl} Mozilla. MPL 2.0 FAQ. \url{https://www.mozilla.org/MPL/2.0/FAQ.html}
 
 \bibitem{license-stats} Black Duck. Top 20 Open Source Licenses. \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
 
