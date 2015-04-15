@@ -38,7 +38,7 @@
 \newpage
 
 \begin{abstract}
-This report compares and contrasts various copyright licenses which meet the criteria for either free or open source software. Two main categories of licenses are explored: permissive licenses which focus on developer freedom and copyleft licenses which focus on end user freedom. This report concludes that despite the plethora of licenses available, software engineers should familiarize themselves mainly with the MIT license, the Apache license and the GNU Genera Public License and refer other licenses to legal professionals.
+This report compares and contrasts various copyright licenses which meet the criteria for either free or open source software. Two main categories of licenses are explored: permissive licenses which focus on developer freedom and copyleft licenses which focus on end user freedom. This report concludes that despite the plethora of licenses available, software engineers should familiarize themselves mainly with the MIT license, the Apache license and the GNU General Public License and refer other licenses to legal professionals.
 \end{abstract}
 \newpage
 \thispagestyle{empty}
@@ -67,7 +67,7 @@ Free software refers to free in the sense of ``free speech'' rather than free as
 
 \subsection{Open Source Software}
 
-In the 1990s, due to persistent confusion around the phrase ``free software'', the Open Source Initiative was started, mainly as a way to sell the pragmatic benefits of free software to businesses without the ethical issues attached to nonfree software by the Free Software Foundation.\cite{opensourcehistory} In order for software to be open source, its distribution terms must meet the open source definition:
+In the 1990s, due to persistent confusion around the phrase ``free software'', the Open Source Initiative was started, mainly as a way to sell the pragmatic benefits of free software to businesses without the ethical issues attached to non-free software by the Free Software Foundation.\cite{opensourcehistory} In order for software to be open source, its distribution terms must meet the open source definition:
 
 \subsubsection*{Open Source Definition\cite{opensourcedefinition}}
 \begin{enumerate}
@@ -76,7 +76,7 @@ In the 1990s, due to persistent confusion around the phrase ``free software'', t
 \item Derived Works (must be allowed)
 \item Integrity of the Author's Source Code (may be maintained if patches may be distributed along side it)
 \item No Discrimination Against Persons or Groups
-\item No Discrimination Against Fields of Endeavor
+\item No Discrimination Against Fields of Endeavour
 \item Distribution of License
 \item License Must Not Be Specific to a Product
 \item License Must Not Restrict Other Software
@@ -85,7 +85,7 @@ In the 1990s, due to persistent confusion around the phrase ``free software'', t
 
 \section{Permissive Licenses}
 
-Permissive licenses are the licenses which offer the greatest freedom to developers. Developers are generally free to modify and redistribute the osftware subject to few conditions. The most common condition is including the copyright notice and a liability disclaimer with copies of the software.\cite{permissive}
+Permissive licenses are the licenses which offer the greatest freedom to developers. Developers are generally free to modify and redistribute the software subject to few conditions. The most common condition is including the copyright notice and a liability disclaimer with copies of the software.\cite{permissive}
 
 \subsection{BSD License}
 
@@ -111,7 +111,7 @@ The original Apache License was essentially the same as the ``original'' BSD Lic
 
 In version 1.1 of the Apache License, the advertising clause was removed. This made it essentially the same as the ``modified'' BSD License with the two Apache clauses added.\cite{apache11}
 
-Apache License, Version 2.0 brought more substantial changes. It removed explicit references to the Apache Software Foundation to make use of the license by others easier and clarified some language so that others could more easily contribute to projects licensed under the Apache License. This included a patent grant from any contributor whose contribution infinged their own patent.\cite{apache2}
+Apache License, Version 2.0 brought more substantial changes. It removed explicit references to the Apache Software Foundation to make use of the license by others easier and clarified some language so that others could more easily contribute to projects licensed under the Apache License. This included a patent grant from any contributor whose contribution infringed their own patent.\cite{apache2}
 
 \subsection{WTFPL and Public Domain}
 
@@ -125,15 +125,17 @@ Boost, a popular collection of C++ libraries, has its own license which is essen
 
 The ISC License is even less verbose than the MIT License. The language which was removed was deemed obsolete due to the Berne convention. This license has become the preferred license for OpenBSD and other projects.\cite{openbsd} Due to its lack of verbosity, it may be argued that it does not contain the implicit patent grant which the MIT license may contain. The Fair License is substantially similar to the ISC License although far less popular.\cite{fair}
 
-The Attribution Assurance License is substantially similar to the BSD License, except that the license is GPG-signed and requires that redistribution include the GPG-signed form of the license. This assures downstream recipients of the software that the terms of the license have not been changed by redistributors.\cite{attrassur}
+The Attribution Assurance License is substantially similar to the BSD License, except that the license is GPG-signed and requires that redistribution include the GPG-signed form of the license. This assures downstream recipients of the software that the terms of the license have not been changed by redistributor.\cite{attrassur}
 
-The Academic Free License includes a copyright and a patent license. It also includes a choice of juridiction clause in favour of the author and includes a provision for recovering legal fees incurred enforcing the terms of the license. It has been deemed redundant due to the creation of the Apache License Version 2.0.\cite{academic}
+The Academic Free License includes a copyright and a patent license. It also includes a choice of jurisdiction clause in favour of the author and includes a provision for recovering legal fees incurred enforcing the terms of the license. It has been deemed redundant due to the creation of the Apache License Version 2.0.\cite{academic}
 
 The Education Community License is essentially the same as the Apache License. It has the patent grant changed due to the different needs of the education community when it comes to patent licensing compared with industry needs.\cite{education}
 
+\newpage
+
 \section{Copyleft Licenses}
 
-Copyleft licenses are designed to keep software both free and open. As opposed to permissive licenses, copyleft licenses are modelled around the free software philosophy. A copyleft license guarantees that any derived work must be distributed under the same set of freedoms of the original work \cite{copyleft}. While this licensing restriction can greatly improve collaboration in a development ecosystem, it often leads to incompatibilies with other licenses.
+Copyleft licenses are designed to keep software both free and open. As opposed to permissive licenses, copyleft licenses are modelled around the free software philosophy. A copyleft license guarantees that any derived work must be distributed under the same set of freedoms of the original work \cite{copyleft}. While this licensing restriction can greatly improve collaboration in a development ecosystem, it often leads to incompatibilities with other licenses.
 
 \subsection{GNU GPLv2}
 
@@ -143,7 +145,7 @@ Frustrated by the shift in software culture, Stallman, the designer of the GPL, 
 
 In the process of developing the GNU project, Stallman realized that his collection of software maintained the freedoms that he set out to ensure, but the fractured licensing of each application prevented his applications from sharing code. As a result, in 1989, he designed the GNU GPL to unify the licenses of the GNU project; allowing him to share the code between each application while maintaining the goals of a copyleft license \cite{gpl2}. Two years later he released the GPLv2 to rephrase the legal language of the original GPL, however this change didn't introduce any new legal implications.
 
-Some of the main features of the GNU GPLv2 include:
+Some of the main features of the GNU GPLv2 include \cite{gpl2}:
 \begin{enumerate}
 \item The ability to copy and redistribute unmodified source code
 \item The ability to modify and redistribute modified source code
@@ -151,8 +153,6 @@ Some of the main features of the GNU GPLv2 include:
 \item All modified copies are distributed under the GPLv2 license
 \item All compiled programs must be accompanied with the corresponding source code or be provided access to the source code.
 \end{enumerate}
-
-\cite{gpl2}
 
 These features effectively allow anyone to use, copy, and distribute software while ensuring that the original author is protected. For instance, the exclusion of warranty clause ensures that the author is not responsible for any damages incurred from failure in a critical system.
 
@@ -173,11 +173,11 @@ While ``Tivoization''is regularly presented as a means to combat piracy, it is o
 
 Another major change introduced with GPLv3 is that laws that criminalized the development of free software under GPLv2 no longer apply. This includes legislation such as the Digital Millennium Copyright Act and the European Union Copyright Directive.
 
-The philosophy behind this change is that you shouldn't be criminalized for writing software, no matter the intent. While this does not forbid DRM in GPLed software, section 3 of the GPLv3 license states that ``the system will not count as an effective technological ``protection'' measure'' \cite{gpl3}. This effectively guarantees that if the author distributes software that breaks the DRM, they will not be threatened laws such as the DMCA.
+The philosophy behind this change is that you shouldn't be criminalized for writing software, no matter the intent. While this does not forbid DRM in GPLed software, section 3 of the GPLv3 license states that ``the system will not count as an effective technological ``protection'' measure'' \cite{gpl3}. This effectively guarantees that if the author distributes software that breaks the DRM, they will not be threatened by laws such as the DMCA.
 
 \subsubsection{Patent Threats}
 
-Finally, GPLv3 aims to avoid discriminatory patent deals. In the past companies like Microsoft and Novel have tried to use their thousands of patents to claim royalties on users for patent infringement. GPLv3 avoid this by providing explicit patent protection from the program's contributors and redistributors \cite{gpl3}.
+Finally, GPLv3 aims to avoid discriminatory patent deals. In the past companies like Microsoft and Novell have tried to use their thousands of patents to claim royalties on users for patent infringement. GPLv3 avoids this by providing explicit patent protection from the program's contributors and redistributors \cite{gpl3}.
 
 \newpage
 
@@ -191,26 +191,21 @@ The GNU Affero General Public License was designed to close a perceived applicat
 
 \subsection{MPL}
 
-The Mozilla Public License is a weak copyleft license that aims to strike a balance between the BSD and GPL licenses. By striking this balance, the MPL motives collaboration between business and the open source community. The MPL is used in various open source projects including; Thunderbird, Firefox, and Libreoffice.
+The Mozilla Public License is a weak copyleft license that aims to strike a balance between the BSD and GPL licenses. By striking this balance, the MPL motives collaboration between business and the open source community. The MPL is used in various open source projects including; Thunderbird, Firefox, and LibreOffice.
 
 Much like the LGPL, the MPL allows mixing source code of any license, even those that are proprietary, as long as the source code that is distributed under the MPL remains under the MPL. The biggest difference between the LGPL and the MPL is that the MPL applies copyleft on the context of files while the LGPL applies copyleft on the context of libraries \cite{mpl}.
 
 \subsection{Other Copyleft Licenses}
 
-The Common Public License is a license produced by IBM which encourages open source development in commercial settings, while still maintaining the ability to use software licensed under separate terms. Unlike the MPL, the CPL is a strong copyleft license, sharing much of the same terminology in the GPL, however it lacks compatibility with all versions of GPL due to ``choice of law'' section which restricts legal disputes to specific courts.
+The Common Public License is a license produced by IBM which encourages open source development in commercial settings, while still maintaining the ability to use software licensed under separate terms. Unlike the MPL, the CPL is a strong copyleft license, sharing much of the same terminology in the GPL, however it lacks compatibility with all versions of GPL due to ``choice of law'' section which restricts legal disputes to specific courts \cite{cpl}.
 
-The Eclipse Public License is a slightly modified version of the Common Public License which drops the terms related to patent litigations. It is used in the Eclipse IDE and various other Java related projects including the JVM and Clojure.
+The Eclipse Public License is a slightly modified version of the Common Public License which drops the terms related to patent litigations. It is used in the Eclipse IDE and various other Java related projects including the JVM and Clojure \cite{epl}.
 
-The Common Development and Distribution License, produced by Sun Microsystems, is based on the MPL.
-
-The Apple Public Source License was the original license under which Apple's Darwin operating system was developed. While APSL is fully copyleft and the FSF supports the license, they do no longer recommend it. This license was essential in the first stages of Apple, however today most of the software released by the company now use the Apache license.
-
-\newpage
+The Apple Public Source License was the original license under which Apple's Darwin operating system was developed. While APSL is fully copyleft and the FSF supports the license, they do no longer recommend it \cite{licenselist}. This license was essential in the first stages of Apple, however today most of the software released by the company now use the Apache license.
 
 \section{Deciding on a License}
 
 While licensing software is a crucial step in any kind of open source development, it can often be difficult to determine which license best suits your project. As previously outlined, the biggest divide among the open source licenses is the difference between a permissive license and a copyleft license. If you plan on linking your open source software with proprietary software, a permissive or weak copyleft license would be the best choice. However, for many  open source projects, a copyleft license is often more suitable.
-
 
 \begin{figure}[h]
 \begin{adjustwidth}{-1in}{-1in}
@@ -222,7 +217,7 @@ While licensing software is a crucial step in any kind of open source developmen
 
 Considering the license adoption statistics as outline in figure 1, it is quite obvious that the GPL and its variants dominate the open source license market. However, there is massive divide between GPL and the other copyleft licenses, while the permissive licenses are distributed more evenly.
 
-As a result of this large divide, for free software the decision almost always comes down to the GPLv3 or GPLv2. For open source software, it is ideal to choose a GPL license, but if you cannot ahere to the strict requirements of a copyleft license, it usually comes down to either the MIT, Apache or ``modified'' BSD license.
+As a result of this large divide, for free software, the decision almost always comes down to the GPLv3 or GPLv2. For open source software, it is ideal to choose a GPL license, but if you cannot adhere to the strict requirements of a copyleft license, it usually comes down to either the MIT, Apache or ``modified'' BSD license.
 
 \section{Conclusion}
 At first sight, licensing can seem quite daunting for those who don't care much for legal matters, but its crucial aspect of open source software development. Without a software license you can't create an open source community.
@@ -231,69 +226,74 @@ At first sight, licensing can seem quite daunting for those who don't care much 
 
 \begin{thebibliography}{20}
 
-\bibitem{apache1} The Apache Software Foundation. Apache License, Version 1.0 \url{https://www.apache.org/licenses/LICENSE-1.0}
+\raggedright
+\bibitem{apache1} The Apache Software Foundation. Apache License, Version 1.0 [Online]. Available: \url{https://www.apache.org/licenses/LICENSE-1.0}
 
-\bibitem{apache11} The Apache Software Foundation. Apache License, Version 1.1 \url{https://www.apache.org/licenses/LICENSE-1.1}
+\bibitem{apache11} The Apache Software Foundation. Apache License, Version 1.1 [Online]. Available: \url{https://www.apache.org/licenses/LICENSE-1.1}
 
-\bibitem{apache2} The Apache Software Foundation. Apache License, Version 2.0 \url{https://www.apache.org/licenses/LICENSE-2.0}
+\bibitem{apache2} The Apache Software Foundation. Apache License, Version 2.0 [Online]. Available: \url{https://www.apache.org/licenses/LICENSE-2.0}
 
-\bibitem{license-stats} Black Duck. Top 20 Open Source Licenses. \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
+\bibitem{license-stats} Black Duck. Top 20 Open Source Licenses [Online]. Available: \url{https://www.blackducksoftware.com/resources/data/top-20-open-source-licenses}.
 
-\bibitem{boost} Boost C++ Libraries. Boost Software License. \url{http://www.boost.org/users/license.html}
+\bibitem{boost} Boost C++ Libraries. Boost Software License [Online]. Available: \url{http://www.boost.org/users/license.html}
 
-\bibitem{nolicense} ChooseALicense.com. No License. \url{http://choosealicense.com/no-license/}
+\bibitem{nolicense} ChooseALicense.com. No License [Online]. Available: \url{http://choosealicense.com/no-license/}
 
-\bibitem{billyg} DigiBarn Computer Museum. Bill Gates' Open Letter To Hobbyists. \url{http://www.digibarn.com/collections/newsletters/homebrew/V2_01/gatesletter.html}
+\bibitem{billyg} DigiBarn Computer Museum. Bill Gates' Open Letter To Hobbyists [Online]. Available: \url{http://www.digibarn.com/collections/newsletters/homebrew/V2_01/gatesletter.html}
 
-\bibitem{originalbsd} Free Software Directory. License:BSD 4Clause. \url{directory.fsf.org/wiki/License:BSD_4Clause}
+\bibitem{epl} Eclipse. Eclipse Public License (EPL) Frequently Asked Questions [Online]. Available: \url{http://www.eclipse.org/legal/eplfaq.php#CPLEPL}
 
-\bibitem{simplifiedbsd} Free Software Directory. License:FreeBSD. \url{http://directory.fsf.org/wiki?title=License:FreeBSD}
+\bibitem{originalbsd} Free Software Directory. License:BSD 4Clause [Online]. Available: \url{directory.fsf.org/wiki/License:BSD_4Clause}
 
-\bibitem{x11} Free Software Directory. License:X11. \url{http://directory.fsf.org/wiki/License:X11}
+\bibitem{simplifiedbsd} Free Software Directory. License:FreeBSD [Online]. Available: \url{http://directory.fsf.org/wiki?title=License:FreeBSD}
 
-\bibitem{fsfhistory} GNU Operating System. About the GNU Project \url{https://www.gnu.org/gnu/thegnuproject.html}
+\bibitem{x11} Free Software Directory. License:X11 [Online]. Available: \url{http://directory.fsf.org/wiki/License:X11}
 
-\bibitem{netbsd} GNU Operating System. BSD License Problem. \url{https://www.gnu.org/philosophy/bsd.html}
+\bibitem{fsfhistory} GNU Operating System. About the GNU Projec [Online]. Available: \url{https://www.gnu.org/gnu/thegnuproject.html}
 
-\bibitem{gpl2} GNU Operating System. GNU General Public License, version 2. \url{https://www.gnu.org/licenses/gpl-2.0.html}.
+\bibitem{netbsd} GNU Operating System. BSD License Problem [Online]. Available: \url{https://www.gnu.org/philosophy/bsd.html}
 
-\bibitem{licenselist} GNU Operating System. Various Licenses and Comments About Them. \url{https://www.gnu.org/licenses/license-list.html}
+\bibitem{gpl2} GNU Operating System. GNU General Public License, version 2 [Online]. Available: \url{https://www.gnu.org/licenses/gpl-2.0.html}.
 
-\bibitem{copyleft} GNU Operating System. What is Copyleft? \url{https://www.gnu.org/copyleft/}.
+\bibitem{licenselist} GNU Operating System. Various Licenses and Comments About Them [Online]. Available: \url{https://www.gnu.org/licenses/license-list.html}
 
-\bibitem{fourfreedoms} GNU Operating System. What is Free Software? \url{https://www.gnu.org/philosophy/free-sw.html}
+\bibitem{copyleft} GNU Operating System. What is Copyleft [Online]? Available: \url{https://www.gnu.org/copyleft/}.
 
-bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3. \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
+\bibitem{fourfreedoms} GNU Operating System. What is Free Software [Online]? Available: \url{https://www.gnu.org/philosophy/free-sw.html}
 
-\bibitem{lgpl} GNU Operating System. GNU Lesser General Public License. \url{https://www.gnu.org/licenses/lgpl.html}.
+\bibitem{gpl3} GNU Operating System. A Quick Guide to GPLv3 [Online]. Available: \url{https://www.gnu.org/licenses/quick-guide-gplv3.html}.
 
-\bibitem{agpl} GNU Operating System. Why the Affero GPL. \url{https://gnu.org/licenses/why-affero-gpl.html}.
+\bibitem{lgpl} GNU Operating System. GNU Lesser General Public License [Online]. Available: \url{https://www.gnu.org/licenses/lgpl.html}.
 
-\bibitem{mpl} Mozilla. MPL 2.0 FAQ. \url{https://www.mozilla.org/MPL/2.0/FAQ.html}
+\bibitem{agpl} GNU Operating System. Why the Affero GPL [Online]. Available: \url{https://gnu.org/licenses/why-affero-gpl.html}.
 
-\bibitem{openbsd} OpenBSD. OpenBSD Copyright Policy. \url{http://www.openbsd.org/policy.html}
+\bibitem{mpl} Mozilla. MPL 2.0 FAQ [Online]. Available: \url{https://www.mozilla.org/MPL/2.0/FAQ.html}
 
-\bibitem{academic} Open Source Initiative. Academic Free License 3.0. \url{http://opensource.org/licenses/AFL-3.0}
+\bibitem{openbsd} OpenBSD. OpenBSD Copyright Policy [Online]. Available: \url{http://www.openbsd.org/policy.html}
 
-\bibitem{attrassur} Open Source Initiative. Attribution Assurance License. \url{http://opensource.org/licenses/AAL}
+\bibitem{academic} Open Source Initiative. Academic Free License 3.0 [Online]. Available: \url{http://opensource.org/licenses/AFL-3.0}
 
-\bibitem{education} Open Source Initiative. Education Community License, Version 2.0 \url{http://opensource.org/licenses/ECL-2.0}
+\bibitem{attrassur} Open Source Initiative. Attribution Assurance License [Online]. Available: \url{http://opensource.org/licenses/AAL}
 
-\bibitem{fair} Open Source Initiative. Fair License (Fair). \url{http://opensource.org/licenses/Fair}
+\bibitem{cpl} Open Source Initiative. Common Public License Version 1.0 [Online]. Available: \url{http://opensource.org/licenses/CPL-1.0}
 
-\bibitem{permissive} Open Source Initiative. Frequently Answered Questions. \url{http://opensource.org/faq}
+\bibitem{education} Open Source Initiative. Education Community License, Version 2.0 [Online]. Available: \url{http://opensource.org/licenses/ECL-2.0}
 
-\bibitem{opensourcehistory} Open Source Initiative. History of the OSI. \url{http://opensource.org/history}
+\bibitem{fair} Open Source Initiative. Fair License (Fair) [Online]. Available: \url{http://opensource.org/licenses/Fair}
 
-\bibitem{mit} Open Source Initiative. The MIT License (MIT). \url{http://opensource.org/licenses/MIT}
+\bibitem{permissive} Open Source Initiative. Frequently Answered Questions [Online]. Available: \url{http://opensource.org/faq}
 
-\bibitem{opensourcedefinition} Open Source Initiative. The Open Source Definition. \url{http://opensource.org/definition}
+\bibitem{opensourcehistory} Open Source Initiative. History of the OSI [Online]. Available: \url{http://opensource.org/history}
 
-\bibitem{sqlite} SQLite. SQLite Copyright. \url{https://www.sqlite.org/copyright.html}
+\bibitem{mit} Open Source Initiative. The MIT License (MIT) [Online]. Available: \url{http://opensource.org/licenses/MIT}
 
-\bibitem{copyright} Teaching Copyright. Copyright Frequently Asked Questions. \url{http://www.teachingcopyright.org/handout/copyright-faq}
+\bibitem{opensourcedefinition} Open Source Initiative. The Open Source Definition [Online]. Available: \url{http://opensource.org/definition}
 
-\bibitem{wtfpl} WTFPL – Do What the Fuck You Want to Public License. Frequently Asked Questions. \url{http://www.wtfpl.net/faq/}
+\bibitem{sqlite} SQLite. SQLite Copyright [Online]. Available: \url{https://www.sqlite.org/copyright.html}
+
+\bibitem{copyright} Teaching Copyright. Copyright Frequently Asked Questions [Online]. Available: \url{http://www.teachingcopyright.org/handout/copyright-faq}
+
+\bibitem{wtfpl} WTPF. WTFPL – Do What the Fuck You Want to Public License. Frequently Asked Questions [Online]. Available: \url{http://www.wtfpl.net/faq/}
 
 \end{thebibliography}
 
